@@ -45,7 +45,7 @@ services:
 
   # App: Customer (roda Flyway primeiro)
   customer:
-    build: ./customer
+    build: ./customer-microservice
     container_name: customer
     ports:
       - "8080:8080"
@@ -59,7 +59,7 @@ services:
 
   # App: Product
   product:
-    build: ./product
+    build: ./product-microservice
     container_name: product
     ports:
       - "8081:8081"
@@ -73,7 +73,7 @@ services:
 
   # App: Stock
   stock:
-    build: ./stock
+    build: ./stock-microservice
     container_name: stock
     ports:
       - "8082:8082"
@@ -87,7 +87,7 @@ services:
 
   # App: Order (usa Kafka)
   order:
-    build: ./order
+    build: ./order-microservice
     container_name: order
     ports:
       - "8084:8084"
@@ -104,7 +104,7 @@ services:
 
   # App: Order Receiver (usa Kafka)
   order-receiver:
-    build: ./order-receiver
+    build: ./order-receveid-microservice
     container_name: order-receiver
     ports:
       - "8083:8083"
@@ -121,7 +121,7 @@ services:
 
   # App: Payment (usa Kafka)
   payment:
-    build: ./payment
+    build: ./payment-microservice
     container_name: payment
     ports:
       - "8085:8085"
