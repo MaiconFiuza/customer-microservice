@@ -20,7 +20,7 @@ Executar o seguinte comando:
     docker-compose up --build
 
 #### 2. Executar a aplicação através dos containeres criados:
-Executar o seguinte comando para inicializar os containeres da aplicação, na raíz do projeto (onde se encontra o arquivo docker-compose.yml):
+Executar o seguinte comando para inicializar os containeres da aplicação
 
     docker-compose up
 
@@ -34,5 +34,5 @@ Link para a documentação das API's do projeto (OpenAPI):
 
 
 ### Cobertura de testes do projeto 
-Para rodar a cobertura de testes do projeto é possível pelo comando mvn test, o report com a porcentagem de testes coberto estára no arquivo index dentro de `target\site\jacoco`
+Para rodar a cobertura de testes do projeto é possível pelo comando mvn test, o report com a porcentagem de testes coberto estará no arquivo index dentro de `target\site\jacoco`
 <img width="1184" height="445" alt="image" src="https://github.com/user-attachments/assets/090c8947-e899-41b1-8c45-e3d7a880774f" />
